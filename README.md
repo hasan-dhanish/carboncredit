@@ -2,6 +2,8 @@
 
 CarbonChain is a Carbon Credit Exchange Platform connecting NGOs/SHGs, MNCs, and the NCCR (National Carbon Credit Registry) for transparent carbon credit transactions secured by blockchain technology.
 
+**Live Demo:** [Click Here to View App](https://hasan-dhanish.github.io/carboncredit/login.html)
+
 ## Overview
 
 The platform facilitates the trading of carbon credits between organizations generating them (like NGOs and SHGs involved in reforestation, renewable energy, etc.) and corporations (MNCs) looking to offset their carbon footprint. The entire process is overseen by the NCCR to ensure compliance and authenticity.
