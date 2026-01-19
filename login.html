@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         :root {
             /* Default theme (NGO/SHG) */
             --primary: #1a936f;
@@ -22,7 +21,7 @@
             --light: #f3e8d2;
             --dark: #0d1b2a;
         }
-
+        
         /* MNC Theme */
         .mnc-theme {
             --primary: #2a6bb3;
@@ -31,7 +30,7 @@
             --light: #e8f2ff;
             --dark: #0a1f33;
         }
-
+        
         /* NCCR Admin Theme */
         .nccr-theme {
             --primary: #9c3d8f;
@@ -40,7 +39,7 @@
             --light: #f8e8f5;
             --dark: #2d0d28;
         }
-
+        
         body {
             background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
             min-height: 100vh;
@@ -51,7 +50,7 @@
             color: var(--dark);
             transition: background 0.5s ease;
         }
-
+        
         .container {
             display: flex;
             max-width: 1200px;
@@ -61,7 +60,7 @@
             overflow: hidden;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
-
+        
         .left-panel {
             flex: 1.2;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -74,7 +73,7 @@
             overflow: hidden;
             transition: all 0.5s ease;
         }
-
+        
         .left-panel::before {
             content: '';
             position: absolute;
@@ -85,14 +84,14 @@
             background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" opacity="0.1"><circle cx="50" cy="50" r="40" stroke="white" stroke-width="2" fill="none" /><path d="M20,20 L80,80 M80,20 L20,80" stroke="white" stroke-width="2" /></svg>');
             opacity: 0.1;
         }
-
+        
         .logo {
             display: flex;
             align-items: center;
             margin-bottom: 30px;
             z-index: 1;
         }
-
+        
         .logo-icon {
             width: 60px;
             height: 60px;
@@ -104,24 +103,24 @@
             margin-right: 15px;
             transition: all 0.5s ease;
         }
-
+        
         .logo-icon i {
             font-size: 30px;
             color: white;
         }
-
+        
         .logo-text {
             font-size: 24px;
             font-weight: 700;
         }
-
+        
         .left-panel h1 {
             font-size: 2.5rem;
             margin-bottom: 20px;
             font-weight: 600;
             z-index: 1;
         }
-
+        
         .left-panel p {
             font-size: 1.1rem;
             opacity: 0.9;
@@ -129,26 +128,26 @@
             margin-bottom: 25px;
             z-index: 1;
         }
-
+        
         .features {
             list-style: none;
             margin-top: 30px;
             z-index: 1;
         }
-
+        
         .features li {
             display: flex;
             align-items: center;
             margin-bottom: 15px;
         }
-
+        
         .features i {
             margin-right: 10px;
             color: var(--accent);
             font-size: 18px;
             transition: all 0.5s ease;
         }
-
+        
         .right-panel {
             flex: 1;
             padding: 40px;
@@ -156,13 +155,13 @@
             flex-direction: column;
             justify-content: center;
         }
-
+        
         .form-container {
             max-width: 400px;
             margin: 0 auto;
             width: 100%;
         }
-
+        
         h2 {
             color: var(--secondary);
             font-size: 1.8rem;
@@ -171,7 +170,7 @@
             font-weight: 600;
             transition: color 0.5s ease;
         }
-
+        
         .user-type-selector {
             display: flex;
             margin-bottom: 25px;
@@ -179,7 +178,7 @@
             border-radius: 10px;
             overflow: hidden;
         }
-
+        
         .user-type {
             flex: 1;
             padding: 12px;
@@ -188,16 +187,16 @@
             transition: all 0.3s ease;
             font-weight: 500;
         }
-
+        
         .user-type.active {
             background: var(--primary);
             color: white;
         }
-
+        
         .input-group {
             margin-bottom: 20px;
         }
-
+        
         label {
             display: block;
             margin-bottom: 8px;
@@ -205,7 +204,7 @@
             font-weight: 500;
             transition: color 0.5s ease;
         }
-
+        
         input[type="email"],
         input[type="password"],
         input[type="text"] {
@@ -216,7 +215,7 @@
             font-size: 16px;
             transition: all 0.3s ease;
         }
-
+        
         input[type="email"]:focus,
         input[type="password"]:focus,
         input[type="text"]:focus {
@@ -224,13 +223,13 @@
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(26, 147, 111, 0.2);
         }
-
+        
         .checkbox-group {
             display: flex;
             align-items: center;
             margin-bottom: 20px;
         }
-
+        
         input[type="checkbox"] {
             margin-right: 10px;
             width: 18px;
@@ -238,7 +237,7 @@
             accent-color: var(--primary);
             transition: accent-color 0.5s ease;
         }
-
+        
         .forgot-link {
             color: var(--primary);
             text-decoration: none;
@@ -247,19 +246,19 @@
             transition: color 0.3s ease;
             font-weight: 500;
         }
-
+        
         .forgot-link:hover {
             color: var(--secondary);
             text-decoration: underline;
         }
-
+        
         .divider {
             height: 1px;
             background: #e0e0e0;
             margin: 30px 0;
             position: relative;
         }
-
+        
         .divider::before {
             content: "or";
             position: absolute;
@@ -272,7 +271,7 @@
             font-size: 14px;
             transition: color 0.5s ease;
         }
-
+        
         .btn {
             display: block;
             width: 100%;
@@ -285,24 +284,24 @@
             text-align: center;
             font-weight: 600;
         }
-
+        
         .btn-primary {
             background: var(--primary);
             color: white;
         }
-
+        
         .btn-primary:hover {
             background: var(--secondary);
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-
+        
         .social-login {
             display: flex;
             gap: 15px;
             margin-bottom: 30px;
         }
-
+        
         .btn-social {
             flex: 1;
             background: white;
@@ -316,28 +315,28 @@
             font-weight: 500;
             transition: all 0.3s ease;
         }
-
+        
         .btn-social:hover {
             background: #f5f5f5;
             border-color: var(--primary);
         }
-
+        
         .signup-link {
             text-align: center;
             margin-top: 20px;
             color: #757575;
         }
-
+        
         .signup-link a {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
         }
-
+        
         .signup-link a:hover {
             text-decoration: underline;
         }
-
+        
         .blockchain-animation {
             display: flex;
             justify-content: center;
@@ -345,7 +344,7 @@
             height: 40px;
             z-index: 1;
         }
-
+        
         .block {
             width: 20px;
             height: 20px;
@@ -355,68 +354,57 @@
             animation: pulse 2s infinite;
             transition: background 0.5s ease;
         }
-
+        
         .block:nth-child(2) {
             animation-delay: 0.2s;
         }
-
+        
         .block:nth-child(3) {
             animation-delay: 0.4s;
         }
-
+        
         .block:nth-child(4) {
             animation-delay: 0.6s;
         }
-
+        
         .block:nth-child(5) {
             animation-delay: 0.8s;
         }
-
+        
         @keyframes pulse {
-            0% {
-                transform: scale(1);
-                opacity: 0.7;
-            }
-
-            50% {
-                transform: scale(1.2);
-                opacity: 1;
-            }
-
-            100% {
-                transform: scale(1);
-                opacity: 0.7;
-            }
+            0% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.7; }
         }
-
+        
         /* Responsive design */
         @media (max-width: 992px) {
             .container {
                 flex-direction: column;
                 max-width: 600px;
             }
-
+            
             .left-panel {
                 padding: 30px;
             }
-
+            
             .social-login {
                 flex-direction: column;
             }
         }
-
+        
         @media (max-width: 480px) {
             .user-type-selector {
                 flex-direction: column;
             }
-
+            
             .user-type {
                 padding: 10px;
             }
         }
+
     </style>
 </head>
-
 <body>
     <div class="container">
         <div class="left-panel">
@@ -427,16 +415,15 @@
                 <div class="logo-text">CarbonChain</div>
             </div>
             <h1>Carbon Credit Exchange Platform</h1>
-            <p>Connecting NGOs, MNCs, and NCCR for transparent carbon credit transactions secured by blockchain
-                technology.</p>
-
+            <p>Connecting NGOs, MNCs, and NCCR for transparent carbon credit transactions secured by blockchain technology.</p>
+            
             <ul class="features">
                 <li><i class="fas fa-check-circle"></i> Blockchain-secured transactions</li>
                 <li><i class="fas fa-check-circle"></i> Satellite validation with Random Forest AI</li>
                 <li><i class="fas fa-check-circle"></i> Transparent carbon credit exchange</li>
                 <li><i class="fas fa-check-circle"></i> NCCR admin oversight</li>
             </ul>
-
+            
             <div class="blockchain-animation">
                 <div class="block"></div>
                 <div class="block"></div>
@@ -445,37 +432,37 @@
                 <div class="block"></div>
             </div>
         </div>
-
+        
         <div class="right-panel">
             <div class="form-container">
                 <h2>Login to Your Account</h2>
-
+                
                 <div class="user-type-selector">
                     <div class="user-type active" data-theme="default">NGO/SHG</div>
                     <div class="user-type" data-theme="mnc-theme">MNC</div>
                     <div class="user-type" data-theme="nccr-theme">NCCR Admin</div>
                 </div>
-
+                
                 <div class="input-group">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" placeholder="Your registered email">
                 </div>
-
+                
                 <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" placeholder="Your password">
                 </div>
-
+                
                 <div class="checkbox-group">
                     <input type="checkbox" id="remember">
                     <label for="remember">Keep me logged in</label>
                     <a href="#" class="forgot-link">Forgot Password?</a>
                 </div>
-
+                
                 <button class="btn btn-primary">Login to Dashboard</button>
-
+                
                 <div class="divider"></div>
-
+                
                 <div class="social-login">
                     <button class="btn-social">
                         <i class="fab fa-google"></i> Google
@@ -484,7 +471,7 @@
                         <i class="fas fa-fingerprint"></i> Wallet Connect
                     </button>
                 </div>
-
+                
                 <div class="signup-link">
                     Don't have an account? <a href="#">Register your organization</a>
                 </div>
@@ -537,5 +524,4 @@
         });
     </script>
 </body>
-
 </html>
